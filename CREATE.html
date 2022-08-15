@@ -1,0 +1,70 @@
+<!--Establece que el tipo de estándar del documento es HTML5 -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang= "es">
+
+<!-- Datos que se le pasan al navegador -->
+<head>
+	<meta charset="UTF-8">
+	<title>Comandos</title>
+	<link rel ="stylesheet" type="text/css" href="apuntesmiossql.css"/>
+</head>
+
+<!-- Contiene todo el contenido de la página -->
+<body>
+	<header>
+		<h1>COMANDO CREATE</h1>
+	</header>
+    <main>
+        <nav id="navegador">
+            <ul>
+                <li class="lineanavegador"><a href="file:///C:/Users/Ruben/Documents/Programaci%C3%B3n/SQL/Apuntes%20m%C3%ADos%20SQL%20en%20HTML/index.html">Inicio</a></li>
+                <li class="lineanavegador"><a href="file:///C:/Users/Ruben/Documents/Programaci%C3%B3n/SQL/Apuntes%20m%C3%ADos%20SQL%20en%20HTML/comandos.html">Comandos</a></li>
+            </ul>
+        </nav>
+        <section class="sección">
+            <h2 class="tituloseccion">QUÉ ES EL COMANDO CREATE</h2>
+            <p>
+                Este comando crea un objeto dentro del gestor de bases de datos. Puede crear una base de datos, una tabla, un índice, un procedimiento almacenado o una vista. 
+            </p>
+        </section>
+        <section class="sección">
+            <h2 class="tituloseccion">EJEMPLOS DE USO</h2>
+                <h3>Ejemplo de CREATE para crear una tabla:</h3>
+                    <p>Hay que recordar que antes de poder hacer algo en una base de datos hay que acceder a ella mediante la orden USE</p>
+                    <code>
+                        USE mi_base_de_datos;
+                        CREATE TABLE Empleado
+                        (
+                        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                        Nombre VARCHAR(50),
+                        Apellido VARCHAR(50),
+                        Direccion VARCHAR(255),
+                        Ciudad VARCHAR(60),
+                        Telefono VARCHAR(15)
+                        Peso VARCHAR(5)
+                        Edad(2),
+                        Actividad específica(100),
+                        idCargo INT
+                        );
+                    </code>
+                    <p>Se crearía una tabla con un campo id que no podría quedar vacío, que se autoincrementaría y que sería la clave primaria.
+                    Los campos nombre, apellido, dirección, ciudad, teléfono y peso serían cadenas de caracteres con el límite de caracteres indicado.
+                    </p>
+                <h3>Ejemplo de CREATE para crear una base de datos:</h3>
+                <p>Recuerda que para hacer cualquier cosa en mysql, antes tienes que acceder con tu usuario y contraseña.
+                    En el siguiente ejemplo se crea una base de datos llamada librería y después una tabla libros dentro de ella.  
+                </p>
+                <code>
+                    CREATE DATABASE libreria;
+                    USE libreria;
+                    CREATE TABLE libros(idlibro INTEGER, ISBN VARCHAR (13) UNIQUE, Titulo VARCHAR(40) NOT NULL)
+                </code>
+                <p>Además podrían aplicarse restricciones a las llaves foráneas si existieran las estructuras del resto de tablas relacionadas.</p>
+        </section>
+
+    </main>
+<div id="footer"><p>Copyright nada</p></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+
+h1 {
+	color: #0000cc;
+	font-size:50px;
+	font-family: ms dialog light;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	font-size:38px;
+	font-family: ms dialog light;
+	color: #0000cc;;
+	font-family: ms dialog light;
+}
+
+*{
+margin: 0%;
+border: none;
+}
+
+html, header{
+background: yellow;
+z-index: 1;
+height: 90px;
+}
+
+html, body{
+background: white;
+z-index: 0;
+}
+
+#navegador{
+margin: 0 auto;
+background: red;
+position: relative;
+}
+
+.lineanavegador{display: inline-block;
+padding: 8px;
+background-color: #ddccaa;
+}
+
+
+table colgroup col:nth-child(1){
+	background-color: yellow;	
+}
+table colgroup col:nth-child(2) {
+	background-color: red;
+}
+table colgroup col:nth-child(3) {
+	background-color: #ee8;
+}
+table colgroup col:nth-child(4) {
+	background-color: blue;
+}
+table colgroup col:nth-child(5) {
+	background-color: green;
+}
+table colgroup col:nth-child(6) {
+	background-color: lightblue;
+}
+
+#subtítulo{
+position: fixed;
+left: 0;
+width: 100%;
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+}
+
+#footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
+}
